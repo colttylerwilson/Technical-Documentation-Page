@@ -56,7 +56,46 @@ code {
     color: #66FF66;
 }
 
-@media (max-width: 800px) {
+@media only screen and (min-width: 800px) {
+    #navbar {
+        animation-name: animateleft;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        animation-timing-function: cubic-bezier(0.311, 0.110, .444, 1.49);
+    }
+
+    #main-doc  {
+        animation-name: animateright;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        animation-timing-function: cubic-bezier(0.311, 0.110, .444, 1.49);
+    }
+
+    @keyframes animateleft {
+        0% {
+            top: 0%;
+        }
+        50% {
+            top: 4%;
+        }
+        100% {
+            top: 1.25%;
+        }
+    }
+    @keyframes animateright {
+        0% {
+            top: 0%;
+        }
+        50% {
+            top: 5%;
+        }
+        100% {
+            top: 0%;
+        }
+    }
+}
+
+@media only screen and (max-width: 800px) {
     #navbar {
         position: fixed;
         display: flex;
