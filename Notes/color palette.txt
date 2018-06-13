@@ -4,3 +4,4 @@ Background: #282828
 Color: #33FF33 Apple II
 
 Header Color: #FFB000
+Code Color: #66FF66
